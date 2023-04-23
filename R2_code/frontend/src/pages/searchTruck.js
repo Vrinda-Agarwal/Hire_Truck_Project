@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     height: "100%",
     width: "100%",
     overflow: "hidden",
-    position: "relative",
+    position: "absolute",
   },
   truckBox: {
     backgroundColor: "lightyellow",
@@ -148,6 +148,7 @@ export default function SearchFreight(props) {
 
   // console.log(displayDetails);
   return load ? (
+
     <>
       <div className={classes.overall}>
         <NavbarTruck setIsJwt={props.setIsJwt} setJwt={props.setJwt} />
@@ -216,6 +217,26 @@ export default function SearchFreight(props) {
                 <div className={classes.truckBoxText}>
                   <span style={{ fontWeight: "bold" }}>Vehicles Required:</span>{" "}
                   {ticketD.vehicle_req}
+                </div>
+                <div className={classes.truckBoxText}>
+                  <span style={{ fontWeight: "bold" }}>Source Address:</span>{" "}
+                  {ticketD.source_address}
+                </div>
+                <div className={classes.truckBoxText}>
+                  <span style={{ fontWeight: "bold" }}>Source Pincode:</span>{" "}
+                  {ticketD.source_address_pincode}
+                </div>
+                <div className={classes.truckBoxText}>
+                  <span style={{ fontWeight: "bold" }}>Destination Address:</span>{" "}
+                  {ticketD.destination_address}
+                </div>
+                <div className={classes.truckBoxText}>
+                  <span style={{ fontWeight: "bold" }}>Destination Pincode:</span>{" "}
+                  {ticketD.destination_address_pincode}
+                </div>
+                <div className={classes.truckBoxText}>
+                  <span style={{ fontWeight: "bold" }}>Date of shipment:</span>{" "}
+                  {ticketD.date_of_shipment}
                 </div>
               </Box>
             </div>
