@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     backgroundColor: "lightcyan",
     height: "100%",
     width: "100%",
-    overflow: "hidden",
+    overflow: "scroll",
     position: "absolute",
   },
   truckBox: {

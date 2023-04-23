@@ -12,10 +12,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   overall: {
+    // the CSS should be for entirety of the background as well as it should let me scroll for content
     backgroundColor: "lightcyan",
     height: "100%",
     width: "100%",
-    overflow: "hidden",
+    overflow: "scroll",
     position: "absolute",
   },
   truckBox: {
