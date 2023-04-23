@@ -12,6 +12,13 @@ import { makeStyles } from "@material-ui/core/styles";
 // import truck_details from "../../../backend/models/truck_details";
 
 const useStyles = makeStyles({
+  overall: {
+    backgroundColor: "lightcyan",
+    height: "100%",
+    width: "100%",
+    overflow: "hidden",
+    position: "relative",
+  },
   truckBox: {
     backgroundColor: "lightyellow",
     height: "1070px",
@@ -228,7 +235,7 @@ export default function Dashboard2Freight(props) {
 
   return load ? (
     <>
-      <div style={{ backgroundColor: "lightcyan" }}>
+      <div className={classes.overall}>
         <NavbarFreight setIsJwt={props.setIsJwt} setJwt={props.setJwt} />
         <div style={{ paddingTop: "70px" }}>
           {/* <Button

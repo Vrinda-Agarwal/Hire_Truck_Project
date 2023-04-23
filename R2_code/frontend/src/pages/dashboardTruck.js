@@ -10,6 +10,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles({
+  overall: {
+    backgroundColor: "lightcyan",
+    height: "100%",
+    width: "100%",
+    overflow: "hidden",
+    position: "relative",
+  },
   truckBox: {
     backgroundColor: "lightyellow",
     height: "490px",
@@ -245,7 +252,7 @@ export default function DashboardFreight(props) {
   strheight = size_box + "px";
 
   return (
-    <div style={{ height: strheight, backgroundColor: "lightcyan" }}>
+    <div className={classes.overall}>
       <NavbarTruck setIsJwt={props.setIsJwt} setJwt={props.setJwt} />
       <div style={{ paddingTop: "70px" }}>
         <Button

@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     color: "#fff",
     textTransform: "uppercase",
-    fontSize: '20px',
+    fontSize: '25px',
     textDecoration: "none",
     "&:hover": {
       color: "#ffcc00",

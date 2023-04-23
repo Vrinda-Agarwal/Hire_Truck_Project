@@ -12,6 +12,13 @@ import "../App.css";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
+  overall: {
+    backgroundColor: "lightcyan",
+    height: "100%",
+    width: "100%",
+    overflow: "hidden",
+    position: "relative",
+  },
   truckBox: {
     backgroundColor: "lightyellow",
     height: "750px",
@@ -245,7 +252,7 @@ export default function QuotesTruck(props) {
   console.log("displaydata" ,displayData);
 
   return (
-    <div style={{ height: strheight, backgroundColor: "lightcyan" }}>
+    <div className={classes.overall}>
       <NavbarTruck setIsJwt={props.setIsJwt} setJwt={props.setJwt} />
       <div style={{ paddingTop: "70px" }}>
         <br />
